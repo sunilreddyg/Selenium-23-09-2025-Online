@@ -22,6 +22,11 @@ public class SampleMethods
 		//Running methods from class
 		new SampleMethods().methodA();
 		new SampleMethods().methodB();
+		
+		//Create object
+		SampleMethods obj=new SampleMethods();
+		obj.methodA();
+		obj.methodB();
 	}
 	
 
