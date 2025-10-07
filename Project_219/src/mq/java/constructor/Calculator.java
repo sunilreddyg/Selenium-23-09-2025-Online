@@ -21,6 +21,7 @@ public class Calculator
 	void mul()
 	{
 		System.out.println(a*b);
+		System.out.println("");
 	}
 
 	public static void main(String[] args) 
