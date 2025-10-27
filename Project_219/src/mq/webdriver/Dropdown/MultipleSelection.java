@@ -27,8 +27,8 @@ public class MultipleSelection {
 		 * Converting single selection dropdown into multiple selection dropdow
 		 * Note:--> 
 		 */
-		//((JavascriptExecutor)driver).executeScript
-		//("arguments[0].setAttribute('multiple','multiple')", Dob_month);
+		((JavascriptExecutor)driver).executeScript
+		("arguments[0].setAttribute('multiple','multiple')", Dob_month);
 		Thread.sleep(4000);
 		
 		
@@ -41,24 +41,31 @@ public class MultipleSelection {
 		System.out.println("Dropdown multiple selection type is ---> "+flag);
 		
 		
-		//Deselcting all options from multiple selection dropdown
-		monthSelection.deselectAll();
-		
-		
-		//First option to select
-		monthSelection.selectByVisibleText("May");
-		
-		//second option to select
-		Thread.sleep(2000);
-		monthSelection.selectByVisibleText("Dec");
-		
-		//second option to select
-		Thread.sleep(2000);
-		monthSelection.selectByVisibleText("Jan");
-		
-		//Remove any option from selection
-		Thread.sleep(2000);
-		monthSelection.deselectByVisibleText("May");
+		if(flag==true)
+		{
+			//Deselcting all options from multiple selection dropdown
+			monthSelection.deselectAll();
+			
+			
+			//First option to select
+			monthSelection.selectByVisibleText("May");
+			
+			//second option to select
+			Thread.sleep(2000);
+			monthSelection.selectByVisibleText("Dec");
+			
+			//second option to select
+			Thread.sleep(2000);
+			monthSelection.selectByVisibleText("Jan");
+			
+			//Remove any option from selection
+			Thread.sleep(2000);
+			monthSelection.deselectByVisibleText("May");
+		}
+		else
+		{
+			System.out.println("dropdown is single option selection type");
+		}
 
 	}
 
