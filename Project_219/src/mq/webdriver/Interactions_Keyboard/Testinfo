@@ -1,0 +1,25 @@
+
+
+
+
+
+
+		//Type text into editbox
+		
+		driver.findElement(By.id("id")).Sendkeys("Hello");
+		driver.findElement(By.id("id")).Sendkeys(Keys.TAB,Keys.TAB);
+		
+		
+		//Sendkeys using actions class
+		
+		new Actions(driver)
+		.Click()
+		.Sendkeys(Keys.TAB)
+		.Pause()
+		.Sendkeys(Keys.TAB)
+		.perform();
+		
+		
+		//Sendkey on location
+		WebElement Element=driver.findElement(By.id("id"));
+		new Actions(driver).Sendkeys(Element,keys.TAB).perform();
