@@ -80,5 +80,7 @@
 	<classpathentry kind="lib" path="E:/Selenium-23-09-2025/webdriver_liraries/selenium-support-4.35.0.jar"/>
 	<classpathentry kind="lib" path="E:/Selenium-23-09-2025/webdriver_liraries/selenium-support-4.35.0-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="E:/Selenium-23-09-2025/Supporting LIbrary/ashot-1.5.4(1).jar"/>
+	<classpathentry kind="lib" path="E:/Selenium-23-09-2025/Supporting LIbrary/commons-io-2.16.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
